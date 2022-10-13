@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<p>Welcome to my first Django project!</p>
+
+<table border="1">
+    {% for x in prem%}
+    <tr>
+        <td><a href='update/{{ x.id }}'>{{x.id}}</a></td>
+        <td>{{x.firstname}}</td>
+        <td>{{x.lastname}}</td>
+        <td><a href='delete/{{x.id}}'>delete</a></td>
+    </tr>
+    {% endfor %}
+</table>
+<p><a href="add/">ADD MEMBERS</a></p>
+<p><a href="testing/">test</a></p>
+</html>
