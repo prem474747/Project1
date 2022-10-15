@@ -1,0 +1,12 @@
+<h1>Update member</h1>
+<form action="updaterecord/{{prem.id}}" method="post">
+<!-- <form action="http://127.0.0.1:8000/playstation/update/updaterecord/{{prem.id}}/" method="post"> -->
+{% csrf_token %}
+First Name:<br>
+<input name="first" value="{{ prem.firstname }}">
+<br><br>
+Last Name:<br>
+<input name="last" value="{{ prem.lastname }}">
+<br><br>
+<input type="submit" value="Submit">
+</form>
